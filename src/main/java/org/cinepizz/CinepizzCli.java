@@ -15,7 +15,7 @@ public class CinepizzCli {
 
     public static void main(String[] args) throws InterruptedException {
         for (int i = 1; i <= 2; i++) {
-            extracted(3000, 250);
+            fakeComputation(3000, 250);
             Random random = new Random();
             String who = members.remove(random.nextInt(members.size()));
             String genreA = genres.remove(random.nextInt(genres.size()));
@@ -25,7 +25,7 @@ public class CinepizzCli {
         }
     }
 
-    private static void extracted(int second, int pause) throws InterruptedException {
+    private static void fakeComputation(int second, int pause) throws InterruptedException {
         System.out.print("Recherche des meilleurs critères...");
         int dots = second / pause;
         for(int i=0; i< dots; i++){
